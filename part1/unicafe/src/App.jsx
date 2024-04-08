@@ -35,6 +35,15 @@ const Statistics = (props) => {
   }
 };
 
+const Hello = (props) => {
+  console.log(props);
+  return (
+    <div>
+      <p>Hello {props.name}</p>
+    </div>
+  );
+};
+
 const StatisticLine = (props) => {
   return (
     <table>
@@ -76,6 +85,7 @@ const App = () => {
       <div>
         <Statistics good={good} neutral={neutral} bad={bad} />
       </div>
+      <Hello name="Daniel" />
     </div>
   );
 };
